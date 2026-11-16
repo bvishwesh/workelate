@@ -16,8 +16,10 @@ services:
       - key: GEMINI_MODEL
         value: gemini-1.5-flash
       - key: DATABASE_URL
-        value: sqlite+aiosqlite:////app/data/workelate.db
-    disk:
-      name: workelate-data
-      mountPath: /app/data
-      sizeGB: 1
+        value: sqlite+aiosqlite:///./workelate.db
+      - key: CLI_EXECUTION_TIMEOUT_SECONDS
+        value: 60
+      - key: MAX_CRAWL_DEPTH
+        value: 3
+      - key: MAX_CRAWL_PAGES
+        value: 15

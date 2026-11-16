@@ -44,11 +44,8 @@ ENV PYTHONUNBUFFERED=1 \
     PORT=8000 \
     HOST=0.0.0.0 \
     ENVIRONMENT=production \
-    PYTHONPATH=/app/backend
-
-# Create data directory for persistent SQLite database
-RUN mkdir -p /app/data
-ENV DATABASE_URL=sqlite+aiosqlite:////app/data/workelate.db
+    PYTHONPATH=/app/backend \
+    DATABASE_URL=sqlite+aiosqlite:///./workelate.db
 
 EXPOSE 8000
 
