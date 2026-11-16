@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: workelate-agent
+    env: docker
+    dockerfilePath: Dockerfile
+    plan: free
+    region: oregon
+    healthCheckPath: /api/health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: PORT
+        value: 10000
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-1.5-flash
+      - key: DATABASE_URL
+        value: sqlite+aiosqlite:////app/data/workelate.db
+    disk:
+      name: workelate-data
+      mountPath: /app/data
+      sizeGB: 1
