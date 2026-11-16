@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  workelate-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: workelate-agent
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - PORT=8000
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-1.5-flash}
+      - DATABASE_URL=sqlite+aiosqlite:////app/data/workelate.db
+      - CLI_EXECUTION_TIMEOUT_SECONDS=60
+      - MAX_CRAWL_DEPTH=3
+      - MAX_CRAWL_PAGES=15
+    volumes:
+      - workelate-data:/app/data
+
+volumes:
+  workelate-data:
+    driver: local
