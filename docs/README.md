@@ -4,6 +4,15 @@ WorkElate is a production-grade, full-stack AI chat application that converts na
 
 ---
 
+## 🚀 Live Cloud Deployment
+
+- **🌐 Live Web Application**: [https://workelate-agent.onrender.com/](https://workelate-agent.onrender.com/)
+- **🩺 API Health Endpoint**: [https://workelate-agent.onrender.com/api/health](https://workelate-agent.onrender.com/api/health)
+- **📖 Swagger API Documentation**: [https://workelate-agent.onrender.com/docs](https://workelate-agent.onrender.com/docs)
+- **🐙 GitHub Repository**: [https://github.com/bvishwesh/workelate](https://github.com/bvishwesh/workelate)
+
+---
+
 ## 1. Project Overview & Problem Statement
 
 ### Problem Statement

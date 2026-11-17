@@ -62,7 +62,10 @@ Render supports automatic Docker builds directly from GitHub.
 3. Click **New +** $\to$ **Blueprint**.
 4. Connect your GitHub repository. Render will automatically detect [`render.yaml`](file:///c:/Users/vishw/Downloads/workelate/render.yaml).
 5. Add your `GEMINI_API_KEY` in the environment variables prompt.
-6. Click **Apply**. Render will build and deploy the container on a persistent free URL (`https://workelate-agent.onrender.com`).
+6. Click **Apply**. Render will build and deploy the container on a persistent free URL:
+   - **Active Live Link**: [https://workelate-agent.onrender.com/](https://workelate-agent.onrender.com/)
+   - **Health API**: [https://workelate-agent.onrender.com/api/health](https://workelate-agent.onrender.com/api/health)
+   - **Swagger Docs**: [https://workelate-agent.onrender.com/docs](https://workelate-agent.onrender.com/docs)
 
 ---
 

@@ -2,6 +2,9 @@
 
 > A production-quality AI chat application that converts natural-language instructions into real executable tasks by invoking controlled CLI tools through the backend, featuring live activity transparency and real-time execution streaming.
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Render%20Online-6366F1?style=for-the-badge&logo=render)](https://workelate-agent.onrender.com/)
+[![API Docs](https://img.shields.io/badge/API%20Docs-Swagger%20UI-009688?style=for-the-badge&logo=fastapi)](https://workelate-agent.onrender.com/docs)
+
 [![Python 3.13](https://img.shields.io/badge/Python-3.13-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688.svg)](https://fastapi.tiangolo.com)
 [![React 18](https://img.shields.io/badge/React-18-61DAFB.svg)](https://react.dev/)
@@ -9,6 +12,16 @@
 [![Vite](https://img.shields.io/badge/Vite-5.4-646CFF.svg)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC.svg)](https://tailwindcss.com/)
 [![Tests Passing](https://img.shields.io/badge/Tests-13%2F13%20Passed-brightgreen.svg)]()
+
+---
+
+## 🚀 Live Cloud Deployment
+
+The application is deployed and live on Render:
+
+- **🌐 Live Web Application**: [https://workelate-agent.onrender.com/](https://workelate-agent.onrender.com/)
+- **🩺 API Health Endpoint**: [https://workelate-agent.onrender.com/api/health](https://workelate-agent.onrender.com/api/health)
+- **📖 Interactive API Docs**: [https://workelate-agent.onrender.com/docs](https://workelate-agent.onrender.com/docs)
 
 ---
 
